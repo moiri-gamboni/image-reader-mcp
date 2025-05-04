@@ -16,7 +16,7 @@
     "image"
   ],
   "author": "Moïri Gamboni <moiri.gamboni@proton.me>",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/moiri-gamboni/image-reader-mcp.git"
