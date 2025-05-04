@@ -5,7 +5,6 @@ A simple MCP server built with FastMCP that provides tools to:
 - List image files in a specified directory.
 - Read a specific image file and return its content.
 
-**Important Note:** When using this server within the Cursor IDE, it currently seems to function correctly only when the Claude Sonnet model is selected.
 
 ## Tools
 
@@ -27,8 +26,21 @@ This server provides the following tools:
 *   **Returns:** An object containing the image content suitable for display (using `imageContent` helper from `fastmcp`).
 *   **Supported Extensions:** `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.webp`, `.svg`
 
-## Setup
+### Setup
 
-```bash
-pnpm install
+To configure an MCP client, add the `imageReader` entry to the `mcpServers` object. It should look something like this:
+
+```json
+{
+  "mcpServers": {
+    // ... other servers might be here ...
+    "imageReader": {
+      "command": "npx",
+      "args": ["image-reader-mcp"],
+      "env": {}
+    }
+  }
+}
 ```
+
+**Important Note:** When using this server with Cursor, it currently seems to function only when Claude Sonnet is selected (other models don't seem to have vision enabled).

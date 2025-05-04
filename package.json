@@ -1,8 +1,11 @@
 {
   "name": "image-reader-mcp",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "An MCP server to list and read image files.",
   "main": "dist/index.js",
+  "bin": {
+    "image-reader-mcp": "./dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
