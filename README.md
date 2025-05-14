@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/moiri-gamboni-image-reader-mcp-badge.png)](https://mseep.ai/app/moiri-gamboni-image-reader-mcp)
+
 # Image Reader MCP Server
 
 A simple MCP server built with FastMCP that provides tools to:
